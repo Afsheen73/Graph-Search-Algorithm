@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graph Search Visualization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Graph Search Visualization</h1>
+    <div class="editor">
+        <input id="fromNode" placeholder="From Node" />
+        <input id="toNode" placeholder="To Node" />
+        <input id="cost" type="number" placeholder="Cost" />
+        <button onclick="addEdge()">Add Edge</button>
+        <button onclick="startBFS()">Start BFS</button>
+        <button onclick="startDFS()">Start DFS</button>
+        <button onclick="startUCS()">Start UCS</button>
+        <button onclick="resetGraph()">Reset</button>
+    </div>
+    <canvas id="graphCanvas" width="600" height="400"></canvas>
+    <div class="output" id="output">
+        <h3>Output</h3>
+        <p id="path">Path: </p>
+        <p id="cost">Cost: </p>
+        <p id="time">Time Complexity: </p>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
